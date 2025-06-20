@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
 import blogService from '../services/blogService';
 // import { mockBlogPosts } from '../mocks/handlers/blogHandlers';
-import NotFoundPage from './NotFoundPage';
+import NotFoundPage from './NotfoundPage';
 
 const BlogDetailPage = () => {
     const { slug } = useParams();
