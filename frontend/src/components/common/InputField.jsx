@@ -1,3 +1,6 @@
+<<<<<<< codex/fix-frontend-code-optimization-and-ui/ux
+export { default } from '../forms/Input.jsx';
+=======
 import React from 'react';
 
 const InputField = ({ label, id, type = 'text', className = '', ...props }) => (
@@ -17,3 +20,4 @@ const InputField = ({ label, id, type = 'text', className = '', ...props }) => (
 );
 
 export default InputField;
+>>>>>>> main

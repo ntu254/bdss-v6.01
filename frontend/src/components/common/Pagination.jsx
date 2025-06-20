@@ -1,4 +1,5 @@
 import React from 'react';
+import { cn } from '../../utils/cn';
 
 const Pagination = ({ page, totalPages, onPageChange }) => {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
@@ -8,7 +9,11 @@ const Pagination = ({ page, totalPages, onPageChange }) => {
         <button
           key={p}
           onClick={() => onPageChange(p)}
-          className={`px-3 py-1 rounded ${p === page ? 'bg-red-600 text-white' : 'bg-gray-200'}`}
+          className={cn(
+            'px-3 py-1 rounded',
+            p === page ? 'bg-red-600 text-white' : 'bg-gray-200'
+          )}
+
         >
           {p}
         </button>
