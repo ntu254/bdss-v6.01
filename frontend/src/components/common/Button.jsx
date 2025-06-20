@@ -18,7 +18,6 @@ const Button = React.forwardRef(
     >
       {children}
     </Component>
-  )
 );
 
 export default Button;

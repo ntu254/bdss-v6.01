@@ -13,6 +13,7 @@ const Pagination = ({ page, totalPages, onPageChange }) => {
             'px-3 py-1 rounded',
             p === page ? 'bg-red-600 text-white' : 'bg-gray-200'
           )}
+
         >
           {p}
         </button>
