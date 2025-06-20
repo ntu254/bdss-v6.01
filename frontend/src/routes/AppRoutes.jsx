@@ -24,10 +24,6 @@ import AdminDonationHistoryPage from "../pages/admin/AdminDonationHistoryPage";
 import AdminEmergencyRequestsPage from "../pages/admin/AdminEmergencyRequestsPage";
 import AdminBloodInventoryPage from "../pages/admin/AdminBloodInventoryPage";
 
-import StaffDashboardPage from "../pages/staff/StaffDashboardPage"; 
-import StaffDonorManagementPage from "../pages/staff/StaffDonorManagementPage"; 
-import StaffInventoryPage from "../pages/staff/StaffInventoryPage"; 
-import StaffDonationRequestsPage from "../pages/staff/StaffDonationRequestsPage"; 
 
 
 import MemberDashboardPage from "../pages/MemberDashboardPage";
@@ -77,15 +73,6 @@ const AppRoutes = () => (
             </Route>
         </Route>
 
-        {/* Staff Routes */}
-        <Route element={<ProtectedRoute requiredRoles={['Staff', 'Admin']} />}>
-            <Route path="/staff" element={<AdminLayout />}>
-                <Route index element={<StaffDashboardPage />} />
-                <Route path="donors" element={<StaffDonorManagementPage />} />
-                <Route path="inventory" element={<StaffInventoryPage />} />
-                <Route path="requests" element={<StaffDonationRequestsPage />} />
-            </Route>
-        </Route>
 
         {/* Not Found Route */}
         <Route path="*" element={<NotFoundPage />} />
